@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <script src="scripts/jquery-3.4.1.min.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <title>Final Project - Natalia Lavrenova</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-img" src="images/dice_logo.png" alt="Dice logo"></a>
+    </header>
+    <div class="banner-top">
+            <div class="title">
+                <h1 id="javascript_message">Roll the Dice</h1>
+            </div>
+            <section>
+                <div class="flex-grid">
+                    <article class="experience-wrapper color1">
+                        <h3 class="player-title">You</h3>
+                        <div class="dice-img">
+                            <div class="dice-palce" id="dice1">
+                                <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                            </div>
+                            <div class="dice-palce" id="dice2">
+                                <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                            </div>
+                        </div>
+                        <div class="score">
+                            <p class="title-score">Round Score</p>
+                            <div class="score-number" id="player-score">0</div>
+                        </div>
+                        <div class="score">
+                            <p class="title-score">Game Score</p>
+                            <div class="score-number" id="player-game-score">0</div>
+                        </div>
+                    </article>
+                    <div class="btn-wrapper color1">
+                        <button class="btn-roll" id="roll-dice">Roll Dice</button>                 
+                        <button class="btn-new" id="new-game">New Game</button>                 
+                    </div>
+                    <article class="experience-wrapper color1">
+                        <h3 class="player-title">Computer</h3>
+                        <div class="dice-img">
+                            <div class="dice-palce" id="dice3">
+                                <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                            </div>
+                            <div class="dice-palce" id="dice4">
+                                <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                            </div>
+                        </div>
+                        <div class="score">
+                            <p class="title-score">Round Score</p>
+                            <div class="score-number" id="comp-score">0</div>
+                        </div>
+                        <div class="score">
+                            <p class="title-score">Game Score</p>
+                            <div class="score-number" id="comp-game-score">0</div>
+                        </div>
+                    </article>                
+                </div>
+                <div class="btn-wrapper">
+                    <h2>Rules are simple</h2>
+                    <article class="rules-flex">
+                        <div class="art-rules">
+                            <p class="rule-number">1</p>
+                            <h3>Objectives</h3>
+                            <p class="text">The objective of the game is to obtain the highest score after three rolls of the dice. Each player takes turns rolling a pair of dice.On each turn, the player rolls both dice and calculates their score based on the scoring system provided. After three rolls, the player with the highest score wins the game.</p>
+                        </div>
+                        <div class="art-rules">
+                            <p class="rule-number">2</p>
+                            <h3>Score</h3>
+                            <p class="text">During each roll, the player's score is determined based on the outcome of the two dice. If either of the dice shows a 1, the player's score for that round is 0. If the two dice show the same number, the player's score is calculated by doubling the sum of the two dice. For any other combination of numbers, the player's score for that round is the sum of the two dice.</p>
+                        </div>
+                        <div class="art-rules">
+                            <p class="rule-number">3</p>
+                            <h3>Rolls</h3>
+                            <p class="text">The game progresses in a fixed manner with three rolls for each player. After each roll, the player immediately proceeds to the next roll without the option to stop or skip a turn. Once the third roll is completed, the player's score for that round is determined. This sequence continues until all players have completed their three rolls.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    </div>
+    <section id="pop-up">
+		<div id="msg-pop-up">
+			<button id="close-pop-up">✕</button>
+			<h2>Game Over!</h2>
+			<p class="popup-text">You won!</p>
+	   </div>
+	</section>
+    <footer class="banner-bottom">
+        <div class="footerstyle">
+            <a class="link" href="mailto:nlavrenova@my.bcit.ca">Contact</a>
+            <p class="copy">Natalia Lavrenova | COMP2132</p>
+        </div>
+    </footer>
+</body>
+</html>
